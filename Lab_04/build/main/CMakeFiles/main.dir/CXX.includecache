@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../game/gameboard.h
+gametoken.h
+../game/gametoken.h
+vector
+-
+sstream
+-
+map
+-
+
+../game/gametoken.h
+iostream
+-
+sstream
+-
+
+/Users/connorwiniarczyk/Desktop/cs205_labs/Lab_04/main/main.cpp
+iostream
+-
+gameboard.h
+/Users/connorwiniarczyk/Desktop/cs205_labs/Lab_04/main/gameboard.h
+gametoken.h
+/Users/connorwiniarczyk/Desktop/cs205_labs/Lab_04/main/gametoken.h
+
