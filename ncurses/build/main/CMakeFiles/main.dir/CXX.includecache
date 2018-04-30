@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/users/winiarcc/desktop/ncurses/main/gameboard.h
+list
+-
+functional
+-
+algorithm
+-
+
+/cygdrive/c/users/winiarcc/desktop/ncurses/main/main.cpp
+iostream
+-
+gameboard.h
+/cygdrive/c/users/winiarcc/desktop/ncurses/main/gameboard.h
+render_engine.h
+/cygdrive/c/users/winiarcc/desktop/ncurses/main/render_engine.h
+chrono
+-
+thread
+-
+
+/cygdrive/c/users/winiarcc/desktop/ncurses/main/render_engine.h
+curses.h
+-
+gameboard.h
+/cygdrive/c/users/winiarcc/desktop/ncurses/main/gameboard.h
+
