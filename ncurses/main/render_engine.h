@@ -14,7 +14,7 @@ namespace render_engine {
 		noecho();	// don't echo input back to us
 		keypad(stdscr, TRUE);	// enable special characters like arrow keys and backspace
 
-		win = newwin(GameBoard::WIDTH,GameBoard::HEIGHT, 10, 10);
+		win = newwin(GameBoard::WIDTH,GameBoard::HEIGHT, 0, 0);
 	}
 
 	// render the state of a given gameboard to the screen

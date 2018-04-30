@@ -28,23 +28,25 @@ class GameToken {
 public:
 	GameToken(Point _position) {
 		position = _position;
+		display = [](){return L'*';};
 	}
 
 	// create a copy of a a given GameToken pointer
 	GameToken(GameToken* token) {
 		position = token -> position;
+		display = token -> display;
 	}
 
-	virtual unsigned char display(){
-		return L'*';
-	}
-
+	function<unsigned char ()> display;
 	Point position;
 };
 
-//forward declare
-class GameBoard;
-GameBoard* deep_copy(GameBoard* board);
+class Player : public GameToken {
+public:
+	Player(Point _position) : GameToken(_position) {
+		display = [](){return L'@';};
+	}
+};
 
 class GameBoard {
 public:
@@ -62,9 +64,6 @@ public:
 			output -> add(operation(token));
 		});
 
-
-		// GameBoard* output = deep_copy(this);
-		// output -> forEach(operation);
 		return output;
 	}
 
@@ -74,22 +73,8 @@ public:
 
 	list<GameToken*> tokens;
 
-	static const int WIDTH = 20;
-	static const int HEIGHT = 20;
+	static const int WIDTH = 30;
+	static const int HEIGHT = 30;
 };
-
-// int GameBoard::WIDTH = 20;
-// int GameBoard::HEIGHT = 20;
-
-// creates a deep copy of a given gameboard and returns a pointer to it
-GameBoard* deep_copy(GameBoard* board) {
-	GameBoard* output = new GameBoard();
-
-	for_each(board -> tokens.begin(), board -> tokens.end(), [&](GameToken* token){
-		output -> tokens.push_back(new GameToken(token));
-	});
-
-	return output;
-}
 
 #endif

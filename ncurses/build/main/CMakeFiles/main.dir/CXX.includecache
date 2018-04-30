@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/users/winiarcc/desktop/ncurses/main/gameboard.h
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/gameboard.h
 list
 -
 functional
@@ -14,21 +14,21 @@ functional
 algorithm
 -
 
-/cygdrive/c/users/winiarcc/desktop/ncurses/main/main.cpp
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/main.cpp
 iostream
 -
 gameboard.h
-/cygdrive/c/users/winiarcc/desktop/ncurses/main/gameboard.h
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/gameboard.h
 render_engine.h
-/cygdrive/c/users/winiarcc/desktop/ncurses/main/render_engine.h
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/render_engine.h
 chrono
 -
 thread
 -
 
-/cygdrive/c/users/winiarcc/desktop/ncurses/main/render_engine.h
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/render_engine.h
 curses.h
 -
 gameboard.h
-/cygdrive/c/users/winiarcc/desktop/ncurses/main/gameboard.h
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/gameboard.h
 

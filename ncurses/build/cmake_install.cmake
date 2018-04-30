@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/users/winiarcc/desktop/ncurses
+# Install script for directory: /Users/connorwiniarczyk/cs205_labs/ncurses
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/cygdrive/c/users/winiarcc/desktop/ncurses/build/main/cmake_install.cmake")
+  include("/Users/connorwiniarczyk/cs205_labs/ncurses/build/main/cmake_install.cmake")
 
 endif()
 
@@ -41,5 +41,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/c/users/winiarcc/desktop/ncurses/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/connorwiniarczyk/cs205_labs/ncurses/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
