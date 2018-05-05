@@ -1,4 +1,4 @@
-# Install script for directory: /Users/connorwiniarczyk/cs205_labs/ncurses/main
+# Install script for directory: /cygdrive/c/users/winiarcc/desktop/cs205_labs/ncurses/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -8,41 +8,46 @@ int main() {
 	render_engine::init();
 
 	GameBoard* board = new GameBoard();
-	board -> add(new Player(Point(3, 3)));
+	Player* player = new Player(Point(3, 3));
+
+	for(int i=0; i<3; i++){
+		Tail* tail = new Tail(Point(0, 0));
+		player -> addToTail(tail);
+		board -> add(tail);
+	}
+
+	board -> add(player);
+
+	for(int i=0; i<GameBoard::WIDTH; i++) {
+		board -> add(new Wall(Point(i, 0)));
+	}
+
+	for(int i=0; i<GameBoard::WIDTH; i++) {
+		board -> add(new Wall(Point(i, GameBoard::HEIGHT - 1)));
+	}
+
+	for(int i=0; i<GameBoard::HEIGHT; i++) {
+		board -> add(new Wall(Point(0, i)));
+	}
+
+	for(int i=0; i<GameBoard::HEIGHT; i++) {
+		board -> add(new Wall(Point(GameBoard::WIDTH - 1, i)));
+	}
+
 
 	int input;
-
 	std::thread listen([&](){
 		while(true) {
 			input = getch();
 		}
 	});
 
-	Point velocity = Point(1, 0);
-
 	//gameloop
 	while(true) {
-
 		std::this_thread::sleep_for(std::chrono::milliseconds(50));
-
-		switch(input) {
-			case KEY_UP:
-				velocity = Point( 0, -1);
-				break; 
-			case KEY_DOWN:
-				velocity = Point( 0,  1);
-				break;
-			case KEY_LEFT:
-				velocity = Point(-2,  0);
-				break;
-			case KEY_RIGHT:
-				velocity = Point( 2,  0);
-		}
-
 		board = board -> map([&](GameToken* token){
-			return new GameToken(token -> position + velocity);
+			token -> update(input);
 		});
-
 		render_engine::render(board);
 	}
 
