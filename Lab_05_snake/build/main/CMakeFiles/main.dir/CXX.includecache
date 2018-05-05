@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/gameboard.h
+list
+-
+functional
+-
+algorithm
+-
+curses.h
+-
+
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/main.cpp
+iostream
+-
+gameboard.h
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/gameboard.h
+render_engine.h
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/render_engine.h
+chrono
+-
+thread
+-
+
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/render_engine.h
+curses.h
+-
+gameboard.h
+/Users/connorwiniarczyk/cs205_labs/ncurses/main/gameboard.h
+

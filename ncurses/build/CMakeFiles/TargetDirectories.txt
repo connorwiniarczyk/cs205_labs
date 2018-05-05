@@ -1,5 +1,0 @@
-/cygdrive/c/users/winiarcc/desktop/cs205_labs/ncurses/build/CMakeFiles/edit_cache.dir
-/cygdrive/c/users/winiarcc/desktop/cs205_labs/ncurses/build/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/users/winiarcc/desktop/cs205_labs/ncurses/build/main/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/users/winiarcc/desktop/cs205_labs/ncurses/build/main/CMakeFiles/edit_cache.dir
-/cygdrive/c/users/winiarcc/desktop/cs205_labs/ncurses/build/main/CMakeFiles/main.dir

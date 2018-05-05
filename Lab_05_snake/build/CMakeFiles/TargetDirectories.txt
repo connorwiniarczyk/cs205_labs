@@ -1,0 +1,1 @@
+/Users/connorwiniarczyk/cs205_labs/ncurses/build/main/CMakeFiles/main.dir
